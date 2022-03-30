@@ -44,7 +44,7 @@
         {
             "label": "CheckTestCase",
             "type": "shell",
-            "command": "cd ${fileDirname} && rm -f ${fileDirname}/${fileBasenameNoExtension} && g++ -std=gnu++17 ${fileBasename} -o ${fileBasenameNoExtension} && oj test -c \"${fileDirname}/${fileBasenameNoExtension}\" -d ${fileDirname}/tests/",
+            "command": "cd ${fileDirname} && rm -f ${fileDirname}/${fileBasenameNoExtension} && g++ -std=gnu++17 ${fileBasename} -o ${fileBasenameNoExtension} && oj test -c \"${fileDirname}/${fileBasenameNoExtension}\" -d ${fileDirname}/tests/ -S",
             "presentation": {
                 "reveal": "always",
                 "focus": true,
